@@ -4,8 +4,34 @@ public class StringEx {
 
 	public static void main(String[] args) {
 		
-		usefulMethods();
+//		usefulMethods();
+		stringBufferEx();
+	}
+	
+	private static void stringBufferEx() {
+		// 버퍼의 생성
+		StringBuffer sb = new StringBuffer("This");
+		System.out.println(sb);
 		
+		// 문자열 추가 : append
+		sb.append(" is pencil");
+		System.out.println(sb);
+		
+		// 문자열 삽입 : insert
+		sb.insert(7, " my");
+		System.out.println(sb);
+		
+		// 문자열 치환 : replace
+		sb.replace(7, 10, " your");
+		System.out.println(sb);
+		
+		// 버퍼 사이즈 조정 : setLength
+		sb.setLength(5);
+		System.out.println(sb);
+		
+		StringBuffer sb2 = new StringBuffer("This").append(" is pencil").insert(7, " my").replace(7, 10, " your");
+		String s = sb2.toString();   // 최종 문자열이 생성된다.
+		System.out.println(sb2);
 	}
 	
 	private static void usefulMethods() {
