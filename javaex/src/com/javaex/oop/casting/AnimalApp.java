@@ -9,13 +9,14 @@ public class AnimalApp {
 		dog1.eat();
 		dog1.walk();
 		dog1.bark();
+		System.out.println("------------------");
 		
 		//Upcasting : 참조 자료형에 설계된 멤버에만 접근 가능
 		Animal dog2  = new Dog("아지");  //부모타입으로 자식객체 생성 
 		dog2.eat();
 		dog2.walk();
 		((Dog)dog2).bark(); 	//Downcasting
-
+		System.out.println("------------------");
 		
 		Animal cat1 = new Cat("야용이");	//Upcasting
 		cat1.eat();
@@ -26,6 +27,7 @@ public class AnimalApp {
 		}else if(cat1 instanceof Cat){	// cat1이 Cat의 인스턴스인가?
 			((Cat)cat1).meow();
 		}
+		System.out.println("------------------");
 		
 //		Dog[] pets = new Dog[3];	//부모타입으로 자식을 참조하는가, 다형성 때문에 , 교체가능성 때문에
 		Animal[] pets = new Animal[3];
