@@ -16,6 +16,7 @@ public class Rectangle {
 	public boolean equals(Object obj) {
 		if(obj instanceof Rectangle) {
 			Rectangle other = (Rectangle)obj;
+			return area == other.area;
 			
 		}
 		return super.equals(obj);
