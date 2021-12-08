@@ -23,6 +23,7 @@ public class HashSetEx {
 		hs.add(s3);
 		
 		System.out.println(hs);
+		System.out.println(s1.equals(s3));
 	}
 	
 	private static void hashSetEx() {
